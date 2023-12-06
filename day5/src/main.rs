@@ -3,7 +3,7 @@ Time:        53     91     67     68
 Distance:   250   1330   1081   1025
  */
 
-fn calc_distance(best_distance: i32, race_time: i32) -> i32 {
+fn calc_distance(best_distance: i64, race_time: i64) -> i64 {
     let mut distance = 0;
     let mut possible_wins = 0;
 
@@ -25,4 +25,6 @@ fn main() {
         calc_distance(1025, 68);
 
     println!("{}", error_margin);
+
+    println!("{}", calc_distance(250133010811025, 53916768));
 }
